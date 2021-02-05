@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/stylsheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="nav-bar">
+            QR BATCH
+        </div>
+        <div class="form">
+            <div class="left-box">
+                <div class="text">
+                    Get Started With Qr Batch
+                </div>
+                <div class="gmail-sign-in">
+                    <img class="google-icon" src="./images/gmail-sign-in" alt="">
+                   <a href="google.com"></a> Sign in with Google
+                </div>
+            </div>
+            <div class="right-box">
+                <form name="SignInForm">
+                    <h3>Sign Up With Email</h3>
+                    <div class="form-group">
+                        <input onkeyup="checkform()" type="email" id="emailBox" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <span class="glyphicon glyphicon-lock Tooltip">
+                            <span class="tooltiptext">Tooltip text</span>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <input onkeyup="checkform()" type="password" id="passwordBox" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <span class="glyphicon glyphicon-info-sign Tooltip">
+                            <span class="tooltiptext">Tooltip text</span>
+                        </span>
+                    </div>
+                    <div id="weakPass" class="warning">
+                        <span class="weak-pass"></span> Weak Password
+                    </div>
+                    <div id="strongPass" class="warning">
+                        <span class="strong-pass"></span> Strong Password
+                    </div>
+                    <p>Already a user?</p>
+                    <div class="login"> <span>LOGIN</span> or <span>RESEND VERIFICATION LINK</span></div>
+                    <button id="create" type="submit" disabled class="btn custom">Create Account</button>
+                </form>
+            </div>
+
+            <span class="or">or</span>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
